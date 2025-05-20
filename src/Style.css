@@ -76,3 +76,15 @@ ul {
     padding: var(--gap);
     gap: var(--gap);
 }
+
+/*resumo*/
+.resumo {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.resumo h2 {
+    font-size: 1.4rem;
+    margin-bottom: var(--gap-s);
+    color: var(--color-1);
+}

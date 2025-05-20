@@ -9,7 +9,8 @@ const style: React.CSSProperties = {
   color: "var(--color-2)",
   fontWeight: "600",
   textTransform: "capitalize",
-  cursor: "pointer"
+  cursor: "pointer",
+  fontSize: "1.2rem",
 };
 
 function nomeMes(n: number) {
