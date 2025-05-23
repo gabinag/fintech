@@ -1,14 +1,15 @@
+import { NavLink } from "react-router-dom";
 import { IVenda } from "../Context/DataContext";
 
 export const VendaItem = ({ venda }: { venda: IVenda }) => {
   return (
     <div className="venda box">
-      <a href="">
+      <NavLink to={`/vendas/${venda.id}`}>
           <h3>{venda.nome}</h3>
           <p style={{ fontFamily: "monospace" }}>
             {venda.id}
           </p>
-      </a>
+      </NavLink>
       <p>{venda.preco.toLocaleString("pt-br", {
         style: "currency",
         currency: "BRL",
