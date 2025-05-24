@@ -15,12 +15,9 @@ export const Venda = () => {
   if(data === null) return null;
   return (
     <div>
-      <div className='box mb'>ID: {data.id}</div>
       <div className='box mb'>Nome: {data.nome}</div>
-      <div className='box mb'>
-        {data.preco.toLocaleString("pt-br", {
-          style: "currency", currency: "BRL",
-        })}
+      <div className='box mb'>ID: {data.id}</div>
+      <div className='box mb'>Valor: {data.preco.toLocaleString("pt-br", {style: "currency", currency: "BRL"})}
       </div>
       <div className='box mb'>Status: {data.status}</div>
       <div className='box mb'>Pagamento: {data.pagamento}</div>

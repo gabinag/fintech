@@ -49,19 +49,19 @@ export const GraficoVendas = ({ data }: { data: IVenda[] }) => {
         <Line 
             type="monotone" 
             dataKey="pago" 
-            stroke="#2ce575" 
+            stroke="#097487" 
             strokeWidth={3} 
         />
         <Line
           type="monotone"
           dataKey="processando"
-          stroke="#e5c42c"
+          stroke="#D98E04"
           strokeWidth={3}
         />
         <Line
           type="monotone"
           dataKey="falha"
-          stroke="#ee8989"
+          stroke="#73293D"
           strokeWidth={3}
         />
       </LineChart>

@@ -20,8 +20,8 @@ const Header = () => {
   return (
     <header className="mb">
       <div className='daterange mb'>
+        <h1 className='title box bg-3'>{title}</h1>
         <DateRange />
-        <h1 className='box bg-3'>{title}</h1>
       </div>
       <Meses />
     </header>
