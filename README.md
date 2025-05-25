@@ -1,54 +1,29 @@
-# React + TypeScript + Vite
+# 📊 Fintech - Projeto com React e TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto desenvolvido durante o curso de React com TypeScript da [Origamid](https://www.origamid.com/), com o objetivo de aplicar na prática os conceitos ensinados no curso.
 
-Currently, two official plugins are available:
+## 🚀 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A aplicação simula uma interface para visualização de dados de vendas, consumindo uma API disponibilizada pelo curso. Através dela é possível visualizar vendas realizadas, filtrá-las por período e ter uma visão geral por meio de gráficos.
 
-## Expanding the ESLint configuration
+## 🔧 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Tela de **Resumo**:
+  - Inputs para selecionar data de início e fim.
+  - Botões de atalho para os últimos 4 meses.
+  - Exibição de totais: valor de vendas, valor recebido e valor processando.
+  - Gráfico utilizando **Recharts** para exibir a distribuição de status: pagos, processando e falha.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Tela de **Vendas**:
+  - Lista de vendas com nome, ID e valor.
+  - Ao clicar em uma venda, exibe todos os detalhes: nome, ID, valor, status (pago, processando ou falha), tipo de pagamento (boleto, pix ou cartão) e número de parcelas (se houver).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 Tecnologias e ferramentas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- [Recharts](https://recharts.org/en-US/)
+- API REST de vendas (disponibilizada pelo curso)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🖥️ Demonstração do projeto 
+
+- https://fintech-gabinags-projects.vercel.app/ 
