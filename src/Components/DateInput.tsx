@@ -6,7 +6,7 @@ type IDateInput = React.ComponentProps<"input"> & {
 
 const generalStyle: React.CSSProperties = {
   fontSize: "1rem",
-  color: "var(--color-2)",
+  color: "var(--color-1)",
   padding: "var(--gap-s) .75rem",
   backgroundColor: "var(--color-4)",
   borderRadius: "var(--gap)",

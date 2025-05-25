@@ -1,8 +1,8 @@
 html {
-    --color-1: #463220;
-    --color-2: #5e533f;
-    --color-3: #d7e3e9;
-    --color-4: #f2f2ef;
+    --color-1: #082038;
+    --color-2: #425e86;
+    --color-3: #e3ded0c2;
+    --color-4: #f2f2efbf;
     --color-5: #ffffff;
     --gap-s: 0.625rem;
     --gap: 1.25rem;
@@ -79,6 +79,10 @@ ul {
 }
 
 /*sidenav*/
+.sidenav {
+    min-height: 100vh;
+}
+
 .sidenav li {
     display: flex;
     align-items: center;
